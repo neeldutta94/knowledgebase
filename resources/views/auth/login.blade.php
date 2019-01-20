@@ -1,12 +1,10 @@
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="dist.css">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <title>Login</title>
 </head>
@@ -15,7 +13,7 @@
         @csrf
         <div class="container mx-auto h-full flex justify-center items-center">
             <div class="w-1/3">
-                <h1 class="font-hairline text-white mb-6 text-center">Login to our Website</h1>
+                <h1 class="font-hairline mb-6 text-white text-center">Login</h1>
                 <div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
                     <div class="mb-4">
                         <label class="font-bold text-grey-darker block mb-2">Username or Email</label>
