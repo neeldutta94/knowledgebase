@@ -11,7 +11,7 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -47,26 +47,14 @@
                     World
                 </a>
       </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    U.S.
-                </a>
-      </li>
+
       <li class="mx-2 lg:mx-0">
         <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
                     Technology
                 </a>
       </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    Design
-                </a>
-      </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    Culture
-                </a>
-      </li>
+
+
       <li class="mx-2 lg:mx-0">
         <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
                     Business
@@ -77,11 +65,7 @@
                     Politics
                 </a>
       </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    Opinion
-                </a>
-      </li>
+
       <li class="mx-2 lg:mx-0">
         <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
                     Science
@@ -91,17 +75,7 @@
         <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
                     Health
                 </a>
-      </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    Style
-                </a>
-      </li>
-      <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
-                    Travel
-                </a>
-      </li>
+      </li>      
     </ul>
   </div>
         <main role="main" class="container mx-auto px-4 lg:px-0">

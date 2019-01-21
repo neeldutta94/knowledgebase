@@ -6,6 +6,11 @@
         <span class="block sm:inline">{{ session()->get('message') }}</span>
     </div>
     @endif
+    @if(session()->has('errormessage'))
+    <div class="font-serif bg-red-lightest border border-red-light text-red-dark px-4 py-3 rounded relative" role="alert">
+        <span class="block sm:inline">{{ session()->get('errormessage') }}</span>
+    </div>
+    @endif
 <form id="form" class="w-full mt-10 mb-20" method="POST" action="/postarticle" enctype="multipart/form-data">
     @csrf
     <div class="flex flex-wrap container mb-6">
@@ -19,7 +24,8 @@
             <label class="font-serif block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
                 Article Image
             </label>
-            <input class="clone font-serif appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="image[]" id="image" type="file" placeholder="" autocomplete="off" required multiple>
+            <input class="clone font-serif appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="image[]" id="image" type="file" placeholder="" autocomplete="off" accept="image/*" required multiple>
+            <p class="font-serif text-red">*Image size must be under 2MB</p>
         </div>
     </div>
     <div class="flex flex-wrap container mb-6">
@@ -29,12 +35,12 @@
             </label>
             <Select class="font-serif appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-grey" name="tag" autocomplete="off" required>
                 <option value="">Select Tag</option>
-                <option value="1">World</option>
-                <option value="2">Technology</option>
-                <option value="3">Business</option>
-                <option value="4">Politics</option>
-                <option value="5">Science</option>
-                <option value="6">Health</option>
+                <option value="World">World</option>
+                <option value="Technology">Technology</option>
+                <option value="Business">Business</option>
+                <option value="Politics">Politics</option>
+                <option value="Science">Science</option>
+                <option value="Health">Health</option>
             </select>
         </div>
     </div>
@@ -53,8 +59,4 @@
     </div>
 </form>
 </div>
-
-<script type="text/javascript">
-
-</script>
 @endsection

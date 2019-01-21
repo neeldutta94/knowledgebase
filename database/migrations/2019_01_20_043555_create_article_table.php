@@ -19,7 +19,8 @@ class CreateArticleTable extends Migration
             $table->string('name');
             $table->binary('article');
             $table->string('image');
-            $table->integer('tag_id');
+            $table->string('tag_id');
+            $table->string('username');
             $table->integer('status')->default('1');
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->default(DB::raw('CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP'));
