@@ -3,12 +3,18 @@
 
     @foreach($articles as $article)
     <div class="flex flex-wrap">
-
+            @if(empty($articles[0]))
+            <div class="flex border border-grey-light rounded overflow-hidden shadow">
+              <div class="w-full lg:w-2/3 p-4">
+                  <h3 class="">No Articles to show</h3>
+              </div>
+            </div>
+            @else
               <div class="flex border border-grey-light rounded overflow-hidden shadow">
                 <div class="w-full lg:w-2/3 p-4">
                   <span class="block font-bold text-blue mb-3">
-                                  {{$article->tag_id}}
-                              </span>
+                      {{$article->tag_id}}
+                  </span>
                   <h3 class="">
                       <?php
                           $s = $article->created_at;
@@ -16,7 +22,7 @@
 
                           $date = $dt->format('d M Y');
                       ?>
-                    <a href="#" class="font-serif font-bold no-underline hover:underline text-3xl text-black">
+                    <a href="/view/{{$article->article_id}}" class="font-serif font-bold no-underline hover:underline text-3xl text-black">
                                       {{$article->name}}
                                   </a>
                   </h3>
@@ -29,9 +35,9 @@
                   <p class="text-grey-darkest leading-normal mt-2 mb-6">
                     {{$post}}...
                   </p>
-                  <a href="#" class="no-underline hover:underline text-blue">
-                                  Continue reading
-                              </a>
+                  <a href="/view/{{$article->article_id}}" class="no-underline hover:underline text-blue">
+                      Continue reading
+                  </a>
                 </div>
                 <?php
                   $images = json_decode($article->image, TRUE);
@@ -43,6 +49,7 @@
                   @endforeach
                 </div>
               </div>
+              @endif
 
     </div>
     &nbsp;

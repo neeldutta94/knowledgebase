@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Article;
+use App\Tag;
 use Auth;
 use Input;
 use Validator;
@@ -92,5 +93,16 @@ class ArticleController extends Controller
     public function showArticle(){
         $articles = Article::orderByDesc('created_at')->get();
         return view('home', compact('articles'));
+    }
+
+    public function showArticleByTag($id){
+        $tag = Tag::find($id);
+        $articles = Article::where('tag_id', $tag->name)->orderByDesc('created_at')->get();
+        return view('home', compact('articles'));
+    }
+
+    public function viewArticle($id){
+        $article = Article::find($id);
+        return view('article.view', compact('article'));
     }
 }

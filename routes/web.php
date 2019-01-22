@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'ArticleController@showArticle')->name('home');
+Route::get('/home/{id}', 'ArticleController@showArticleByTag');
 Route::get('/createarticle', 'ArticleController@index')->name('Article');
 Route::post('/postarticle', 'ArticleController@createArticle');
 Route::post('/checkimage', 'ArticleController@checkImage');
+Route::get('/view/{id}', 'ArticleController@viewArticle');

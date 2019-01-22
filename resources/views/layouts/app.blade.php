@@ -43,39 +43,39 @@
 
     <ul class="w-full list-reset flex justify-between scrolling-touch overflow-auto py-3 px-2">
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/1" class="font-sans no-underline hover:underline text-blue-dark">
                     World
                 </a>
       </li>
 
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/2" class="font-sans no-underline hover:underline text-blue-dark">
                     Technology
                 </a>
       </li>
 
 
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/3" class="font-sans no-underline hover:underline text-blue-dark">
                     Business
                 </a>
       </li>
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/4" class="font-sans no-underline hover:underline text-blue-dark">
                     Politics
                 </a>
       </li>
 
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/5" class="font-sans no-underline hover:underline text-blue-dark">
                     Science
                 </a>
       </li>
       <li class="mx-2 lg:mx-0">
-        <a href="#" class="font-sans no-underline hover:underline text-blue-dark">
+        <a href="/home/6" class="font-sans no-underline hover:underline text-blue-dark">
                     Health
                 </a>
-      </li>      
+      </li>
     </ul>
   </div>
         <main role="main" class="container mx-auto px-4 lg:px-0">
